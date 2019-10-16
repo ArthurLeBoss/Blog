@@ -63,30 +63,6 @@ if(isset($_GET['del']))
 </div>
     
 </div>
-   <!-- Article 2  
-   <div class="jumbotron-fluid"  style="border-bottom: 2px solid grey; padding: 20px;">
-    <h2 class="display-4">PHP</h2>
-    <p class="lead">Honnêtement, c'est beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup trop dure sans indications...</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Lire plus</a>
-  </div>
-   
- 
-  Article 3  
- <div class="jumbotron-fluid"  style="border-bottom: 2px solid grey; padding: 20px;">
-    <h2 class="display-4">HTML</h2>
-    <p class="lead">L’HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Lire plus</a>
-  </div>
- 
- - Article 4  
- <div class="jumbotron-fluid"  style="padding: 20px;">
-    <h2 class="display-4">CSS</h2>
-    <p class="lead">Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Lire</a>
-  </div>
-     
-
- -->
    
  <!-- Footer -->
  <footer class="py-5 bg-dark">
