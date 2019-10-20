@@ -11,7 +11,6 @@ if(isset($_GET['del']))
   header('location:index.php');
 }
 
-
 ?>
 
 
@@ -40,8 +39,8 @@ if(isset($_GET['del']))
 				<ul class="navbar-nav mr-auto">
 			  	<div class="navbar-nav">
 				<a class="nav-item nav-link" href="../page/ajouter.php">Ajouter un article</a>
-        <a class="btn btn-info btn-sm" href="#" role="button">Inscription</a>
-        <a class="btn btn-warning btn-sm" href="#" role="button">Connexion</a>
+        <a class="btn btn-info btn-sm" href="../page/inscription.php" role="button">Inscription</a>
+        <a class="btn btn-warning btn-sm disabled" href="../page/connexion.php" role="button" >Connexion</a>
 			  </div>
 			</div>
 	 </nav>
@@ -55,7 +54,7 @@ if(isset($_GET['del']))
             <h2 class="display-4"><?= $article['titre']?></h2>
             <h5 class="display-5"><?=$article['categorie']?></h5>
             <p class="lead"><?=$article['contenu']?></p>
-            <a class="btn btn-primary btn-sm" href="../page/lire_plus.php?id=<?= $article['id'] ?>" role="button">Lire plus</a>
+            <a class="btn btn-primary btn-sm" href="../page/lire_plus.php?id=<?= $article['id'] ?>" role="button">Afficher</a>
             <a class="btn btn-success btn-sm" href="../page/modifier.php?id=<?= $article['id'] ?>" role="button">Modifier</a>
             <a class="btn btn-danger btn-sm" href="index.php?del=<?= $article['id'] ?>" role="button" id="submit_suppr" name="submit_suppr">Supprimer</a>
         <?php endforeach; ?>    
@@ -63,6 +62,30 @@ if(isset($_GET['del']))
 </div>
     
 </div>
+   <!-- Article 2  
+   <div class="jumbotron-fluid"  style="border-bottom: 2px solid grey; padding: 20px;">
+    <h2 class="display-4">PHP</h2>
+    <p class="lead">Honnêtement, c'est beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup beaucoup trop dure sans indications...</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Lire plus</a>
+  </div>
+   
+ 
+  Article 3  
+ <div class="jumbotron-fluid"  style="border-bottom: 2px solid grey; padding: 20px;">
+    <h2 class="display-4">HTML</h2>
+    <p class="lead">L’HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Lire plus</a>
+  </div>
+ 
+ - Article 4  
+ <div class="jumbotron-fluid"  style="padding: 20px;">
+    <h2 class="display-4">CSS</h2>
+    <p class="lead">Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Lire</a>
+  </div>
+     
+
+ -->
    
  <!-- Footer -->
  <footer class="py-5 bg-dark">

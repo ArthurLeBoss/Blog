@@ -39,3 +39,22 @@ function delete_article($id)
     $sth = $db->prepare("DELETE FROM article WHERE id=?");
     $sth->execute(array($id));
 }
+
+function register($pseudo, $mail, $password)
+{
+    global $db;
+    $sth = $db->prepare("INSERT INTO membres (pseudo, pass, mail) values (:pseudo, :pass, :mail)");
+    $sth->execute(array(
+        'pseudo' => $pseudo, 
+        'pass' => $password, 
+        'mail' => $mail
+    ));
+}
+
+// function connexion($pseudo)
+// {
+//     global $db;
+//     $sth = $db->prepare("SELECT * from membres where pseudo=?");
+//     $sth->execute(array($pseudo));
+//     return $sth->fetch();
+// }
